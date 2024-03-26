@@ -1,0 +1,24 @@
+@import "./var.scss";
+
+.banner{
+    @include imgPosition();
+
+    & img{
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 25px;
+        z-index: 1;
+    }
+    &_bannerText{
+        position: absolute;
+        width: 1240px;
+        text-align: center;
+        font-family: $p_texte;
+        font-size: 48px;
+        color: $c_wht;
+        top: 25px;
+        z-index: 2;
+    }
+    // border: 1px solid $c_blk;
+}
+

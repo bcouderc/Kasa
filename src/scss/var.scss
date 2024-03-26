@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$c_blk:#000;
+$c_wht:#fff;
+$c_primaire:#FF6060;
+$c_secondaire:#F6F6F6;
+$c_tertiaire:#666666;
+
+$p_texte : "Montserrat", sans-serif;
+
+@mixin dir_row{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin dir_col{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin align_centerHV{
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin imgPosition{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}

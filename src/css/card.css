@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 1140px;
+  border-radius: 25px;
+  background-color: #F6F6F6;
+  padding: 40px 50px 40px 50px;
+  margin: 30px 0 30px 0;
+}
+.gallery_cards {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  width: 339px;
+  padding: 20px;
+}
+.gallery img {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.gallery_title {
+  position: absolute;
+  top: 285px;
+  left: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 18px;
+  z-index: 2;
+}

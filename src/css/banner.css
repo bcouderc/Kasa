@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.banner {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.banner img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 25px;
+  z-index: 1;
+}
+.banner_bannerText {
+  position: absolute;
+  width: 1240px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  color: #fff;
+  top: 25px;
+  z-index: 2;
+}

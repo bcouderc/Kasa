@@ -1,0 +1,25 @@
+@import "./var.scss";
+
+// Header
+li{
+    font-family: $p_texte;
+    color: $c_primaire;
+    list-style-type: none;
+   float: left;
+   width: auto;
+   cursor: pointer;
+   padding-left: 50px;
+}
+
+.head{
+    &_contenaire{
+        @include dir_row();
+        justify-content: space-between;
+        margin: 20px;
+    }
+    &_nav{
+        @include dir_row();
+        justify-content: flex-end;
+        gap: 30px;
+    }
+}
