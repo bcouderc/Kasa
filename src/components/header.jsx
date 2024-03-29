@@ -1,18 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../css/header.css';
-import logo from '../img/logo.png';
+import logoHeader from '../img/logo.png';
 
 export default function Navbar(){
-    // state
-
-    // Comportement
-
-    // Affichage (render)
 return(
     <div className="head_contenaire">
         <div >
-            <img src={logo} alt="logo kasa"></img>
+            <img src={logoHeader} alt="logo kasa" className="logo"/>
         </div>
         <div className="head_nav">
             <nav>

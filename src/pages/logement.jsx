@@ -1,12 +1,31 @@
-import React from "react";
-function Logement() {
+ 
 
+ export default function Appart({logement}) {
 
     return(
         <div>
-            <p>test de chargement de la page Logement</p>
-        </div>
-    );
-}
 
-export default Logement;
+            {/* Description */}
+            <div>
+                <div>
+                    <p>Description</p>
+                </div>
+                <div>
+                    <p>{logement.description}</p>
+                </div>
+            </div>
+            {/* Equipements */}
+            <div>
+                <div>
+                    <p>Equipements</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>{logement.equipements}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    )
+    
+ }

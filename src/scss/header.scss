@@ -1,14 +1,25 @@
 @import "./var.scss";
 
-// Header
+
+
 li{
     font-family: $p_texte;
-    color: $c_primaire;
+    font-size: 24px;
     list-style-type: none;
-   float: left;
-   width: auto;
-   cursor: pointer;
-   padding-left: 50px;
+    float: left;
+    width: auto;
+    color: $c_primaire;
+    cursor: pointer;
+    padding-left: 50px;
+
+    & a{
+        color: $c_primaire;
+        text-decoration: none;
+    }
+    & a:hover{
+        color: $c_primaire;
+        text-decoration: underline;
+    }
 }
 
 .head{
@@ -20,6 +31,31 @@ li{
     &_nav{
         @include dir_row();
         justify-content: flex-end;
+        align-items: center;
         gap: 30px;
     }
 }
+
+@media (max-width:$mobile){
+
+    li{
+        font-size: 12px;
+        text-transform: uppercase;
+        padding-left: 10px;
+    }
+
+    .head{
+        &_contenaire{
+            margin: auto ;
+    }
+        &_nav{
+            width: 190px;
+            gap: 0px;
+        }
+    }
+
+    .logo {
+        width: 145px;
+    }
+}
+

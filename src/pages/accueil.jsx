@@ -1,10 +1,8 @@
 import React from "react";
 import Banner from "../components/banner";
-import cover_src from "../img/home_cover.png";
+import cover_src from "../img/Image source 1.png";
 import data from "../data/logements.json";
 import Card from "../components/cards";
-
-
 
 
 function Accueil() {

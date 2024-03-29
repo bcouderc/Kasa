@@ -1,8 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  max-width: 1240px;
   margin: auto;
 }
 
 p {
   color: #000;
+}
+
+@media screen and (min-width: 480px) {
+  .mep {
+    max-width: 1420px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mep {
+    margin: 15px 15px 0 15px;
+  }
 }

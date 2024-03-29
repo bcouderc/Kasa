@@ -1,0 +1,31 @@
+@import "./var.scss";
+
+.contenu{
+    &_footer {
+    @include flexColumn();
+    width: 100%;
+        &_text{
+            color: $c_wht;
+            font-family: $p_texte;
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+    
+}
+footer {
+    display: flex;
+    height: 209px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: $c_blk;
+}
+
+@media screen and (max-width:$mobile){
+    .footer{  
+        &_text{
+            font-size: 12px;
+        }
+    }
+}

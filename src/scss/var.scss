@@ -9,6 +9,9 @@ $c_tertiaire:#666666;
 
 $p_texte : "Montserrat", sans-serif;
 
+$tablette:768px;
+$mobile:480px;
+
 @mixin dir_row{
     display: flex;
     flex-direction: row;
@@ -22,6 +25,20 @@ $p_texte : "Montserrat", sans-serif;
 @mixin align_centerHV{
     align-items: center;
     justify-content: center;
+}
+
+@mixin flexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @mixin imgPosition{
