@@ -12,14 +12,15 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Si vous voulez commencer à mesurer la performance dans votre application, passez une fonction
+// pour enregistrer les résultats (par exemple : reportWebVitals(console.log))
+// ou envoyer à un point de terminaison d’analyse. Pour en savoir plus : https://bit.ly/CRA-vitals
+
 reportWebVitals();
 
 
-// // Force this state update to be synchronous.
-// flushSync(() => {
-//   setCount(count + 1);
+// // Force cette mise à jour d’état à être synchrone.
+// flushSync() => {
+//   setCount(compte + 1);
 // });
-// // By this point, DOM is updated.
+ // // À ce stade, DOM est mis à jour.

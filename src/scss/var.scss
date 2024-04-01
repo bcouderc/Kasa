@@ -47,3 +47,8 @@ $mobile:480px;
     background-size: cover;
     overflow: hidden;
 }
+
+@mixin texte{
+    font-family: $p_texte;
+    color: $c_primaire;
+}

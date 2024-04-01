@@ -12,9 +12,9 @@ function Accueil() {
       <div>
         <Banner bannerText="Chez vous, partout et ailleurs" bannerCover={cover_src} />
         <div className="gallery">
-          {data.map((element) => { return <Card logement={element}/> })}
+          {data.map((element) => { return <Card logement={element} key={element.id}/> })}
         </div>
-      </div>
+      </div>  
     );
   }
 

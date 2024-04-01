@@ -1,0 +1,52 @@
+@import "./var.scss";
+
+.container{
+    @include flexColumn();
+    width: 100%;
+    gap: 200px;
+    margin: 25% 0 25% 0;
+    &_titre1{
+        @include texte();
+        font-weight: 700;
+        font-size: 288px;
+    }
+    &_titre2{
+        @include texte();
+        font-size: 36px;
+    }
+    &_titre3{
+        @include texte();
+        font-size: 18px;
+        text-decoration:underline ;
+    }
+}
+
+@media screen and (max-width : $tablette) {
+    .container{
+        gap: 100px;
+        &_titre1{
+            font-size: 144px;
+        }
+        &_titre2{
+            font-size: 30px;
+            text-align: center;
+        }
+        &_titre3{
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:$mobile) {
+    .container{
+        &_titre1{
+            font-size: 96px;
+        }
+        &_titre2{
+            font-size: 18px;
+        }
+        &_titre3{
+            font-size: 14px;
+        }
+    }
+}

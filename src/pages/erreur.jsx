@@ -1,22 +1,13 @@
-import Banner from "../components/banner";
-import Navbar from "../components/header";
-import Pdp from "../components/footer"
+import "../css/error.css"
 
-
-function Error () {
+export default function Error () {
     return (
-        <div>
-            <Banner /> 
-            <Navbar/>
-            <p>404</p>
-            <p>Oups! La page que vous demandez n'existe pas</p>
-            <p a href = "#">Retourner sur la page d'accueil</p>
-
-            <Pdp />
+        <div className="container">
+            <p className="container_titre1">404</p>
+            <p className="container_titre2">Oups! La page que vous demandez n'existe pas</p>
+            <p className="container_titre3">Retourner sur la page d'accueil</p>
 
         </div>
     )
 }
    
-
-export default Error;
