@@ -1,7 +1,6 @@
 import '../css/banner.css';
 
-
-export default function Banner(props) {
+export default function CompBanner(props) {
     console.log(props)
     return(
         <div className="banner">

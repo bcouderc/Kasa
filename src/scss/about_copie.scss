@@ -1,3 +1,5 @@
+// Code avant inclusion des animations
+
 @import "./var.scss";
 
 .about{
@@ -9,24 +11,15 @@
         margin: 15px 0 15px 0;
         overflow: hidden;
         border: 1px solid #000;
-        transition: height 500ms ease-in-out;
     }
     &_titre{
         @include dir_row();
-        position: relative;
         justify-content: space-between;
         align-items: center;
         background-color: $c_primaire;
         border-radius: 5px;
         height: 52px;
         padding: 0 20px 0 20px;
-
-
-        & img{
-            position: absolute;
-            right: 20px;
-            cursor: pointer;
-        }
     }
     & h1 {
         font-family: $p_texte;
@@ -34,7 +27,6 @@
         font-size: 24px;
     }
     & p{
-        // display: none;
         font-family: $p_texte;
         text-align: justify;
         color: $c_primaire;

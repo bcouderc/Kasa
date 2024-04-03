@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import '../css/header.css';
 import logoHeader from '../img/logo.png';
 
-export default function Navbar(){
+export default function CompHeader(){
 return(
     <div className="head_contenaire">
         <div >

@@ -11,12 +11,14 @@
 .container_titre1 {
   font-family: "Montserrat", sans-serif;
   color: #FF6060;
+  font-size: 18px;
   font-weight: 700;
   font-size: 288px;
 }
 .container_titre2 {
   font-family: "Montserrat", sans-serif;
   color: #FF6060;
+  font-size: 18px;
   font-size: 36px;
 }
 .container_titre3 {
@@ -44,9 +46,6 @@
 @media screen and (max-width: 480px) {
   .container_titre1 {
     font-size: 96px;
-  }
-  .container_titre2 {
-    font-size: 18px;
   }
   .container_titre3 {
     font-size: 14px;

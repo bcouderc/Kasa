@@ -1,22 +1,23 @@
 import React from "react";
-import Banner from "../components/banner";
+
+import CompBanner from "../components/banner";
+import CompCard from "../components/cards";
+
 import cover_src from "../img/Image source 1.png";
 import data from "../data/logements.json";
-import Card from "../components/cards";
 
 
-function Accueil() {
+
+export default function PageAccueil() {
 
     console.table(data);
     return (
       <div>
-        <Banner bannerText="Chez vous, partout et ailleurs" bannerCover={cover_src} />
+        <CompBanner bannerText="Chez vous, partout et ailleurs" bannerCover={cover_src} />
         <div className="gallery">
-          {data.map((element) => { return <Card logement={element} key={element.id}/> })}
+          {data.map((element) => { 
+            return <CompCard logement={element}/> })}
         </div>
       </div>  
     );
   }
-
-  
-export default Accueil;

@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import collapse from "../pages/logement";
+
 import '../css/card.css';
 
-export default function Card({logement}) {
+export default function CompCard({logement}) {
     
     return(
-        <Link to={`/pages/logement/${logement.id}`} className='gallery_cards'>
+        <Link to={`/location/${logement.id}`} className='gallery_cards'>
             <div>
                 <div>
                     <p className='gallery_text'>{logement.title}</p>

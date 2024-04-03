@@ -50,5 +50,6 @@ $mobile:480px;
 
 @mixin texte{
     font-family: $p_texte;
-    color: $c_primaire;
+    color: $c_primaire ;
+    font-size: 18px;
 }

@@ -16,7 +16,6 @@
     }
     &_titre3{
         @include texte();
-        font-size: 18px;
         text-decoration:underline ;
     }
 }
@@ -41,9 +40,6 @@
     .container{
         &_titre1{
             font-size: 96px;
-        }
-        &_titre2{
-            font-size: 18px;
         }
         &_titre3{
             font-size: 14px;

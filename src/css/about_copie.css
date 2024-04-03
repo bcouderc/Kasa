@@ -12,23 +12,16 @@
   margin: 15px 0 15px 0;
   overflow: hidden;
   border: 1px solid #000;
-  transition: height 500ms ease-in-out;
 }
 .about_titre {
   display: flex;
   flex-direction: row;
-  position: relative;
   justify-content: space-between;
   align-items: center;
   background-color: #FF6060;
   border-radius: 5px;
   height: 52px;
   padding: 0 20px 0 20px;
-}
-.about_titre img {
-  position: absolute;
-  right: 20px;
-  cursor: pointer;
 }
 .about h1 {
   font-family: "Montserrat", sans-serif;

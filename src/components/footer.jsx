@@ -1,8 +1,9 @@
 import React from "react";
+
 import '../css/footer.css';
 import logoFooter from '../img/logo_footer.png';
 
-export default function PiedDePage() {
+export default function CompFooter() {
 return(
     <div className='contenu_footer'>
         <div>
