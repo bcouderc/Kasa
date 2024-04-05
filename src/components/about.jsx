@@ -6,6 +6,7 @@ export default function CompAbout({apropos}) {
         <div>
             <div className="about_collapse">
                 <div className="about_titre">
+                    {/* Affiche les données contenu dans le fichier JSON en fonction du critère */}
                     <h1>{apropos.titre}</h1>
                     <img src={chevron} alt=""/>
                 </div>
@@ -15,4 +16,4 @@ export default function CompAbout({apropos}) {
             </div>
         </div>
     );
-}
+}  

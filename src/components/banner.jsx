@@ -1,14 +1,14 @@
 import '../css/banner.css';
 
-export default function CompBanner(props) {
-    console.log(props)
+export default function CompBanner(banner) {
+    console.log(banner)
     return(
         <div className="banner">
             <div >
-                <p className='banner_Text'>{props.bannerText}</p>
+                <p className='banner_Text'>{banner.bannerText}</p>
             </div>            
             <div>
-                <img src={props.bannerCover} alt=" home cover" />
+                <img src={banner.bannerCover} alt="" />
             </div>
         </div>
     )

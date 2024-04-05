@@ -16,6 +16,7 @@ export default function PageAbout() {
         <CompBanner bannerCover={cover_about} />
         
         <div className="about">
+          {/* Permet de boucler sur les éléments contenu dans le fichier JSON et de retourner les données dans le composant CompAbout */}
           {data.map ((element) => {return <CompAbout apropos={element} />})}
 
 

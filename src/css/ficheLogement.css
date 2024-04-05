@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.coverLogement {
+  display: flex;
+  width: 100%;
+  height: 415px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.coverLogement img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.appart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.appartDescript {
+  font-family: "Montserrat", sans-serif;
+  color: #FF6060;
+}
+.appartTitre {
+  font-size: 36px;
+}
+
+.host {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.host p {
+  width: 93px;
+  text-align: right;
+  color: #FF6060;
+}
+.host img {
+  width: 64px;
+  border-radius: 50%;
+}
+
+.cardTags {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  margin-top: 30px;
+  gap: 20px;
+}
+.cardTags span {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  background-color: #FF6060;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 0.4em 0.7em;
+  border-radius: 10px;
+}
+
+.custom-select::after {
+  content: "▼"; /* Flèche vers le bas par défaut */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%) rotate(180deg); /* Rotation de 180 degrés par défaut */
+  transition: transform 0.3s;
+}
+.custom-select:hover::after {
+  transform: translateY(-50%) rotate(0deg); /* Rotation de 0 degré lorsqu'il est survolé */
+}
+
+.starAlign {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .appart {
+    font-size: 14px;
+  }
+  .appartTitre {
+    font-size: 18px;
+  }
+  .host p {
+    font-size: 12px;
+  }
+  .host img {
+    width: 32px;
+  }
+  .cardTags {
+    justify-content: space-between;
+  }
+  .cardTags span {
+    width: 120px;
+    font-size: 10px;
+  }
+}
