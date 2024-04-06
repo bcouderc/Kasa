@@ -3,8 +3,7 @@
 .container{
     @include flexColumn();
     width: 100%;
-    gap: 200px;
-    margin: 25% 0 25% 0;
+    gap: 150px;
     &_titre1{
         @include texte();
         font-weight: 700;
@@ -22,7 +21,7 @@
 
 @media screen and (max-width : $tablette) {
     .container{
-        gap: 100px;
+        margin: 50px 0 50px 0;
         &_titre1{
             font-size: 144px;
         }

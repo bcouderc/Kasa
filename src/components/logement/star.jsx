@@ -1,10 +1,14 @@
 import React from "react";
-import stars from "../../img/red_star.png"
+import starRed from "../../img/red_star.png";
+import starGrey from "../../img/grey_star.png";
 
-export default function CompStar() {
+export default function CompStar({color}) {
+            console.log(color)
     return(
+
         <div>
-            <FontAwesomeIcon icon="fa-sharp fa-solid fa-star" />
+           <img src={color === "red" ? starGrey : starRed} alt="" />
         </div>
+        
     ); 
 }

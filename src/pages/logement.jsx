@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router";
+
 import data from "../data/logements.json";
 
 import CompHost from "../components/logement/host";
@@ -18,6 +19,9 @@ import "../css/ficheLogement.css"
             item.id === id
         )
     })
+
+      // Convertir la valeur de rating en un nombre entier
+    const rating = parseInt(logement.rating);
 
     return(
         <div>
@@ -38,26 +42,19 @@ import "../css/ficheLogement.css"
                         </div>
                         <div>
                             <div>
-                                <CompHost host={logement.host}/>
+                                <CompHost host={logement.host} />
                             </div>
                             <div className="starAlign">
                                 {Array.from({ length: 5 }).map((_, index) => (
-                                    <CompStar
+                                <CompStar
                                     key={index}
-                                    className={index >= 3 ? "redStar" : ""}
-                                    />
+                                    color={index >= rating ? "red" : "grey"}/>
                                 ))}
                             </div>
-                            
                         </div>
-                    </div>
-
+                    </div>                
                 </div>
-                
             </div>
         </div>
-    )
-    
+    )    
  }
-
-

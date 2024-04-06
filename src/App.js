@@ -26,7 +26,6 @@ export default function App() {
       </div>
       <footer>
         <CompFooter />
-        <select>Test</select>
       </footer>
     </Router>
     

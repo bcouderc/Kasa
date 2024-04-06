@@ -78,11 +78,12 @@
   
   }
   
-
-.starAlign{
+.star{
+    &Align{
     @include dir_row;
     margin-top: 10px;
     gap: 5px;
+    }
 }
 
 @media screen and (max-width : $mobile){
