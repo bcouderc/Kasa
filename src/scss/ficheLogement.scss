@@ -74,10 +74,8 @@
     &:hover::after {
     transform: translateY(-50%) rotate(0deg); /* Rotation de 0 degré lorsqu'il est survolé */
     }
-  
-  
   }
-  
+
 .star{
     &Align{
     @include dir_row;
@@ -85,6 +83,84 @@
     gap: 5px;
     }
 }
+
+// Mise en forme des collapses
+@import "./var.scss";
+
+.logement{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    &_collapse{
+        width: 670px;
+        height: 300px;
+        border-radius: 5px;
+        background: $c_secondaire;
+        margin: 15px 0 15px 0;
+        overflow: hidden;
+        // border: 1px solid #000;
+        transition: height 500ms ease-in-out;
+        &.collapsed{
+            height: 52px;
+
+            & .about_titre img{
+                transform: rotate(0deg); 
+            }
+        }
+    }
+    &_titre{
+        @include dir_row();
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $c_primaire;
+        border-radius: 5px;
+        height: 52px;
+        padding: 0 20px 0 20px;
+
+        & img{
+            position: absolute;
+            right: 20px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        &.collapsed img{            
+            transform: rotate(0);            
+        }
+
+        &:not(.collapsed) img {
+            transform: rotate(180deg);
+        }
+    }
+    & h1 {
+        font-family: $p_texte;
+        color: $c_wht;
+        font-size: 24px;
+    }
+    & p{
+        // display: none;
+        font-family: $p_texte;
+        text-align: justify;
+        font-size: 24px;
+        color: $c_primaire;
+        margin: 0 10px 0 10px;
+        padding: 10px 0 10px 0;
+    }
+
+    & ul{
+        display: flex;
+        flex-direction: column;
+        font-family: $p_texte;
+        color: $c_primaire;
+
+        & li{
+            padding-left:20px;
+        }
+    }
+}
+
+// Media queries
 
 @media screen and (max-width : $mobile){
     .appart{

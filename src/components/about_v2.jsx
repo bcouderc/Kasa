@@ -2,27 +2,36 @@ import React, { useState } from "react";
 import chevron from "../img/arrow_back_ios-24px 2.svg";
 import "../css/about.css";
 
-export default function CompAbout({apropos}) {
-    const [collapsed, setCollapsed] = useState(true);
+export default function CompCollapse({ apropos }) {
+  const [collapsed, setCollapsed] = useState(true);
 
-    const toggleCollapse = () => {
-        setCollapsed(!collapsed);
-    };
+  const toggleCollapse = () => {
+    setCollapsed(!collapsed);
+  };
 
-    return (
-        <div>
-            <div className={`about_collapse ${collapsed ? 'collapsed' : ''}`}>
-                <div className="about_titre" onClick={toggleCollapse}>
-                    <h1>{apropos.titre}</h1>
-                    <img src={chevron} alt=""/>
-                </div>
-                <div>
-                    <p>{apropos.corps}</p>
-                </div>              
-            </div>
+  return (
+    <div>
+      <div className={`about_collapse ${collapsed ? 'collapsed' : ''}`}>
+        <div className="about_titre" onClick={toggleCollapse}>
+          {apropos.titre ? (
+            <h1>{apropos.titre}</h1>
+          ) : (
+            <h1>Description</h1>
+          )}
+          <img src={chevron} alt="" />
         </div>
-    );
+        <div>
+          {apropos.corps ? (
+            <p>{apropos.corps}</p>
+          ) : (
+            <p>{apropos.description}</p>
+          )}
+        </div>
+      </div>
+    </div>
+  );
 }
+
 
 // Dans le code ci-dessus, l'état local collapsed utilise le hook useState. Par défaut, il est initialisé à true, ce qui signifie que la div est repliée au début. Ensuite, la fonction toggleCollapse modifie l'état de collapsed lorsqu'elle est appelée.
 

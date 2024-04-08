@@ -6,8 +6,9 @@ import data from "../data/logements.json";
 import CompHost from "../components/logement/host";
 import CompTags from "../components/logement/tags";
 import CompStar from "../components/logement/star";
+import CompInfos from "../components/logement/infos";
 
-import "../css/ficheLogement.css"
+import "../css/ficheLogement.css";
 
  export default function PageLogement() {
     // useParams permet d'identifier les paramètres d'URL (ici l'id)
@@ -54,6 +55,9 @@ import "../css/ficheLogement.css"
                         </div>
                     </div>                
                 </div>
+                    <div>
+                        <CompInfos infos={logement} />
+                    </div>
             </div>
         </div>
     )    
