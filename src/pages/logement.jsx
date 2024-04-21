@@ -26,7 +26,7 @@ import "../css/ficheLogement.css";
 
     return(
         <div>
-            <div>
+            <div className="mep">
                 {/* ici mettre les clefs du logement :
                 title / cover / pictures / ...*/}
                 <div className="coverLogement">
@@ -41,7 +41,7 @@ import "../css/ficheLogement.css";
                                 {logement.tags.map((tag) => (<CompTags tag={tag} />))}
                             </div>
                         </div>
-                        <div>
+                        <div className="host_align">
                             <div>
                                 <CompHost host={logement.host} />
                             </div>

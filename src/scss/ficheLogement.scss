@@ -85,7 +85,6 @@
 }
 
 // Mise en forme des collapses
-@import "./var.scss";
 
 .logement{
     display: flex;
@@ -159,11 +158,13 @@
         }
     }
 }
-
-// Media queries
+// *********************************************************** /
+// Media queries ********************************************* /
+// *********************************************************** /
 
 @media screen and (max-width : $mobile){
     .appart{
+        @include dir_col();
         font-size: 14px;
         &Titre{
             font-size: 18px;  
@@ -171,6 +172,13 @@
     }
 
     .host{
+        &_align{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
         & p {
             font-size: 12px;
         }
@@ -182,8 +190,30 @@
     .cardTags{
         justify-content: space-between;    
         span{
-            width: 120px;
+            width: 90px;
             font-size: 10px;
+        }
+    }
+
+    .logement{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        &_collapse{
+            width: 100%;
+            height: 170px;
+            &.collapsed{
+                height: 30px
+            }
+        }
+        &_titre{
+            height: 30px;
+        }
+        & h1{
+            font-size: 13px;
+        }
+        & p{
+            font-size: 12px;
         }
     }
 }

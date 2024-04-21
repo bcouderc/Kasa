@@ -11,17 +11,23 @@
 
     &_cards{
         @include imgPosition();
+        display: grid;
+        // grid-template-columns: repeat(3, minmax(0, 1fr));
         width: calc(33.33% - 60px);
         margin: 30px;
         flex-grow: 1;
-    }
-    & img{
+        
+        & img{
         width: 100%;
         aspect-ratio: 1/1;
-        max-width: 100%;
+        height: auto;
+        // max-width: 100%;
+        object-fit: cover;
         border-radius: 10px;
         z-index: 1;
-    }
+        }
+}
+
     &_text{
         position: absolute;
         display: flex;

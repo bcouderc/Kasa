@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import chevron from "../../img/arrow_back_ios-24px 2.svg";
 import "../../css/ficheLogement.css";
+import "../../css/style.css";
 
 export default function CompInfos({infos}) {
     const [descriptionCollapsed, setDescriptionCollapsed] = useState(true);
