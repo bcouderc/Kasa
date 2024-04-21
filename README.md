@@ -5,6 +5,7 @@ Créer une application web de location immobilière avec React.
 Refonte totale du site pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end.
 
 Avant de démarrer votre travail sur ce projet, nous vous conseillons de :
+
     1. Lire le scénario en entier, chaque section du projet ainsi que les documents fournis.
     2. Consulter le guide des étapes clés avec des recommandations et des ressources pour organiser votre travail.
     3. Préparer une liste de questions pour votre première session de mentorat.
